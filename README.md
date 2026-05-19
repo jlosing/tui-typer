@@ -12,6 +12,8 @@ Run the app, you will be greeted with your word list. The timer doesn't start un
 
 ![main_page_screenshot](screenshots/main-page.png)
 
+![finished_screen](screenshots/finished_screen)
+
 ## Running the app
 
 If you want to compile it yourself, make sure you have the Rust toolchain installed (via [rustup.rs](https://rustup.rs/)).
