@@ -12,7 +12,7 @@ Run the app, you will be greeted with your word list. The timer doesn't start un
 
 ![main_page_screenshot](screenshots/main-page.png)
 
-![finished_screen](screenshots/finished_screen)
+![finished_screen](screenshots/finished_screen.png)
 
 ## Running the app
 
