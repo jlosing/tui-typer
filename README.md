@@ -8,7 +8,7 @@ This is just a fun little project I put together to test typing speeds without a
 
 ## 🎮 How to Play
 
-Run the app, you will be greeted with your word list. The timer doesn't start until you type your first letter
+Run the app, you will be greeted with your word list. The timer doesn't start until you type your first letter. It will record your typing and then show you your words per minute.
 
 ## Running the app
 
