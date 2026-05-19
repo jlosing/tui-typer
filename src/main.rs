@@ -4,8 +4,8 @@ use rand::prelude::*;
 use ratatui::{
     DefaultTerminal, Frame,
     buffer::Buffer,
-    layout::{Alignment, Constraint, Direction, Layout, Rect},
-    style::{Color, Style, Stylize},
+    layout::{Alignment, Constraint, Layout, Rect},
+    style::{Color, Stylize},
     text::{Line, Text},
     widgets::{Block, Paragraph, Widget, Wrap},
 };
@@ -425,13 +425,14 @@ mod tests {
 
     #[test]
     fn test_restart_resets_state() {
-        let mut app = App::default();
-        app.game_state = GameState::Finished;
-        app.time_left = 0;
-        app.user_input_words = "mistakes were made".to_string();
-        app.start_time = Some(SystemTime::now());
-        app.finished_time = Some(SystemTime::now());
-
+        let mut app = App {
+            game_state: GameState::Finished,
+            time_left: 0,
+            user_input_words: "mistakes were made".to_string(),
+            start_time: Some(SystemTime::now()),
+            finished_time: Some(SystemTime::now()),
+            ..Default::default()
+        };
         app.restart_game();
 
         assert_eq!(app.game_state, GameState::BeforeTyping);
