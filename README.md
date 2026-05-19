@@ -10,6 +10,8 @@ This is just a fun little project I put together to test typing speeds without a
 
 Run the app, you will be greeted with your word list. The timer doesn't start until you type your first letter. It will record your typing and then show you your words per minute.
 
+![main_page_screenshot](screenshots/main-page.png)
+
 ## Running the app
 
 If you want to compile it yourself, make sure you have the Rust toolchain installed (via [rustup.rs](https://rustup.rs/)).
